@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_analyatnotes",
+  "info": {
+    "singularName": "sitename-analyatnote",
+    "pluralName": "sitename-analyatnotes",
+    "displayName": "sitename_analyatnote"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "publishdatetime": {
+      "type": "datetime"
+    },
+    "coverimage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "mainimage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "thumbnall": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_videoanalyais_videoanalyais",
+  "info": {
+    "displayName": "videoanalyaisview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "userid": {
+      "type": "string"
+    },
+    "videoanalyaisid": {
+      "type": "string"
+    },
+    "vieweddatetime": {
+      "type": "datetime"
+    }
+  }
+}

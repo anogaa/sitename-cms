@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_keyindicators",
+  "info": {
+    "singularName": "sitename-keyindicator",
+    "pluralName": "sitename-keyindicators",
+    "displayName": "sitename_keyindicator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "option1name": {
+      "type": "string"
+    },
+    "option2name": {
+      "type": "string"
+    },
+    "option1selected": {
+      "type": "boolean"
+    }
+  }
+}

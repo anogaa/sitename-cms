@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_accounts",
+  "info": {
+    "singularName": "sitename-account",
+    "pluralName": "sitename-accounts",
+    "displayName": "sitename_account",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "Marketingpreferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "marketingpreferences.marketingpreferences"
+    }
+  }
+}

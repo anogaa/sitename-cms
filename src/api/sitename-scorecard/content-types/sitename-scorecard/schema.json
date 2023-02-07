@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_scorecards",
+  "info": {
+    "singularName": "sitename-scorecard",
+    "pluralName": "sitename-scorecards",
+    "displayName": "sitename_scorecard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "serialnumber": {
+      "type": "string"
+    },
+    "scorecardcategoryid": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "shortname": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    },
+    "previousscore": {
+      "type": "string"
+    },
+    "netchange": {
+      "type": "string"
+    },
+    "scorepercentage": {
+      "type": "integer"
+    }
+  }
+}

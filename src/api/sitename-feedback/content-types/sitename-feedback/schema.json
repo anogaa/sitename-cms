@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_feedbacks",
+  "info": {
+    "singularName": "sitename-feedback",
+    "pluralName": "sitename-feedbacks",
+    "displayName": "sitename_feedback"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userid": {
+      "type": "string"
+    },
+    "name": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "text"
+    }
+  }
+}

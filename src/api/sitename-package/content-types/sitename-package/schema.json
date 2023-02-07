@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitename_packages",
+  "info": {
+    "singularName": "sitename-package",
+    "pluralName": "sitename-packages",
+    "displayName": "sitename_package"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "discountedprice": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "integer"
+    }
+  }
+}
