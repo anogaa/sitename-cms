@@ -4,11 +4,11 @@
   "info": {
     "singularName": "sitename-videoanalyais",
     "pluralName": "sitename-videoanalyaises",
-    "displayName": "sitename_videoanalyais",
+    "displayName": "videoanalyais",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

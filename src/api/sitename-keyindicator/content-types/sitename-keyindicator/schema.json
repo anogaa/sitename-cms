@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-keyindicator",
     "pluralName": "sitename-keyindicators",
-    "displayName": "sitename_keyindicator"
+    "displayName": "keyindicator",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

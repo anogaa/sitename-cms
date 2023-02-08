@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-videoanalyaiscomment",
     "pluralName": "sitename-videoanalyaiscomments",
-    "displayName": "sitename_videoanalyaiscomment"
+    "displayName": "videoanalyaiscomment",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

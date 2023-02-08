@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-scorecardcategory",
     "pluralName": "sitename-scorecardcategories",
-    "displayName": "sitename_scorecardcategory"
+    "displayName": "scorecardcategory",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

@@ -4,11 +4,11 @@
   "info": {
     "singularName": "sitename-account",
     "pluralName": "sitename-accounts",
-    "displayName": "sitename_account",
+    "displayName": "account",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

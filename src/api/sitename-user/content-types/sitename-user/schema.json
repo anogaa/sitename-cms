@@ -4,11 +4,11 @@
   "info": {
     "singularName": "sitename-user",
     "pluralName": "sitename-users",
-    "displayName": "sitename_user",
+    "displayName": "users",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

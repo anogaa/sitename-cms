@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-alert",
     "pluralName": "sitename-alerts",
-    "displayName": "sitename_alert"
+    "displayName": "alert",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

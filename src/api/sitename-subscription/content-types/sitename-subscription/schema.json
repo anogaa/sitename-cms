@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-subscription",
     "pluralName": "sitename-subscriptions",
-    "displayName": "sitename_subscription"
+    "displayName": "subscription",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-package",
     "pluralName": "sitename-packages",
-    "displayName": "sitename_package"
+    "displayName": "package",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

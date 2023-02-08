@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-feedback",
     "pluralName": "sitename-feedbacks",
-    "displayName": "sitename_feedback"
+    "displayName": "feedback",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

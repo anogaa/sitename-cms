@@ -4,10 +4,11 @@
   "info": {
     "singularName": "sitename-tutorial",
     "pluralName": "sitename-tutorials",
-    "displayName": "sitename_tutorial"
+    "displayName": "tutorial",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
