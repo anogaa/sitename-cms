@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tutorials",
+  "info": {
+    "singularName": "tutorial",
+    "pluralName": "tutorials",
+    "displayName": "tutorial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videocomponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "videocomponent.videotutorial"
+    }
+  }
+}

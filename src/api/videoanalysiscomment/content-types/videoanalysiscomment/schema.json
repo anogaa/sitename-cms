@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videoanalysiscomments",
+  "info": {
+    "singularName": "videoanalysiscomment",
+    "pluralName": "videoanalysiscomments",
+    "displayName": "videoanalysiscomment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userid": {
+      "type": "string"
+    },
+    "videoanalysisid": {
+      "type": "string"
+    }
+  }
+}

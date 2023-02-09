@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "singularName": "subscription",
+    "pluralName": "subscriptions",
+    "displayName": "subscription",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accountid": {
+      "type": "string"
+    },
+    "packageid": {
+      "type": "string"
+    },
+    "startdate": {
+      "type": "datetime"
+    },
+    "enddate": {
+      "type": "datetime"
+    },
+    "autorenew": {
+      "type": "boolean"
+    }
+  }
+}
