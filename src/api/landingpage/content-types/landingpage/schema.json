@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landingpages",
+  "info": {
+    "singularName": "landingpage",
+    "pluralName": "landingpages",
+    "displayName": "landingpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "videourl": {
+      "type": "text"
+    },
+    "aboutdescription": {
+      "type": "text"
+    },
+    "LandingPageSections": {
+      "displayName": "sections",
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-sections.sections"
+    },
+    "footerlinks": {
+      "displayName": "footerlinks",
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-sections.footerlinks"
+    }
+  }
+}

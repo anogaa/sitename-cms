@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_landing_page_sections_footerlinks",
+  "info": {
+    "displayName": "footerlinks"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "text"
+    },
+    "twitter": {
+      "type": "text"
+    },
+    "Instagram": {
+      "type": "text"
+    },
+    "helpcenter": {
+      "type": "text"
+    },
+    "blog": {
+      "type": "text"
+    },
+    "newsletter": {
+      "type": "text"
+    },
+    "privacypolicy": {
+      "type": "text"
+    },
+    "termsofservices": {
+      "type": "text"
+    }
+  }
+}
