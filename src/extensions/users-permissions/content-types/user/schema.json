@@ -15,7 +15,8 @@
   "attributes": {
     "username": {
       "type": "string",
-      "required": false
+      "required": false,
+      "configurable": false
     },
     "email": {
       "type": "email",
