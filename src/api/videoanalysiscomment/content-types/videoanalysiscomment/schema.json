@@ -17,6 +17,9 @@
     },
     "videoanalysisid": {
       "type": "string"
+    },
+    "comment": {
+      "type": "text"
     }
   }
 }

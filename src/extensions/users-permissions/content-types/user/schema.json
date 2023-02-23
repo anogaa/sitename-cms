@@ -68,12 +68,20 @@
     "lastname": {
       "type": "string",
       "required": false
-
     },
     "phonenumber": {
       "type": "integer",
       "required": false
-
+    },
+    "billingaddress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::billingaddress.billingaddress"
+    },
+    "feedback": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feedback.feedback"
     }
   }
 }
