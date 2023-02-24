@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "userid": {
-      "type": "string"
-    },
     "name": {
       "type": "string"
     },
@@ -26,6 +23,11 @@
     },
     "comment": {
       "type": "string"
+    },
+    "userId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

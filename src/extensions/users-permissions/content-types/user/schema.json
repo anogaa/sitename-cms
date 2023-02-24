@@ -82,6 +82,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::feedback.feedback"
+    },
+    "account": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::account.account",
+      "inversedBy": "users"
     }
   }
 }
