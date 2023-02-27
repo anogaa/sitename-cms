@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "accountid": {
-      "type": "string"
-    },
-    "packageid": {
-      "type": "string"
-    },
     "startdate": {
       "type": "datetime"
     },
@@ -26,6 +20,16 @@
     },
     "autorenew": {
       "type": "boolean"
+    },
+    "accountid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::account.account"
+    },
+    "packageid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::package.package"
     }
   }
 }
