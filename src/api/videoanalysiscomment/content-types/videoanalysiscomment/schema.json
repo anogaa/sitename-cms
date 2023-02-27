@@ -12,14 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "userid": {
-      "type": "string"
-    },
-    "videoanalysisid": {
-      "type": "string"
-    },
     "comment": {
       "type": "text"
+    },
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "videoanalysisid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::videoanalysis.videoanalysis"
     }
   }
 }

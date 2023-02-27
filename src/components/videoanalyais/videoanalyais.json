@@ -6,14 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "userid": {
-      "type": "string"
-    },
     "videoanalyaisid": {
       "type": "string"
     },
     "vieweddatetime": {
       "type": "datetime"
+    },
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
