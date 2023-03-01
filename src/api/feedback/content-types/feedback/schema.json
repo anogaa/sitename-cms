@@ -4,7 +4,7 @@
   "info": {
     "singularName": "feedback",
     "pluralName": "feedbacks",
-    "displayName": "feedback",
+    "displayName": "Feedback",
     "description": ""
   },
   "options": {
@@ -24,7 +24,7 @@
     "comment": {
       "type": "string"
     },
-    "userid": {
+    "userId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"

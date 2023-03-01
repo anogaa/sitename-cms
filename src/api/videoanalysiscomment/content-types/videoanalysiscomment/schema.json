@@ -4,7 +4,7 @@
   "info": {
     "singularName": "videoanalysiscomment",
     "pluralName": "videoanalysiscomments",
-    "displayName": "videoanalysiscomment",
+    "displayName": "Videoanalysis Comment",
     "description": ""
   },
   "options": {
@@ -12,14 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "userid": {
-      "type": "string"
-    },
-    "videoanalysisid": {
-      "type": "string"
-    },
     "comment": {
       "type": "text"
+    },
+    "videoanalysisid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::videoanalysis.videoanalysis"
+    },
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

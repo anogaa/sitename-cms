@@ -73,15 +73,11 @@
       "type": "integer",
       "required": false
     },
-    "billingaddress": {
+    "account": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::billingaddress.billingaddress"
-    },
-    "feedback": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::feedback.feedback"
+      "relation": "manyToOne",
+      "target": "api::account.account",
+      "inversedBy": "users"
     }
   }
 }

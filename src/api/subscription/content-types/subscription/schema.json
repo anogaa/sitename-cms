@@ -4,7 +4,7 @@
   "info": {
     "singularName": "subscription",
     "pluralName": "subscriptions",
-    "displayName": "subscription",
+    "displayName": "Subscription",
     "description": ""
   },
   "options": {
@@ -21,12 +21,12 @@
     "autorenew": {
       "type": "boolean"
     },
-    "accountid": {
+    "accountId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::account.account"
     },
-    "packageid": {
+    "packageId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::package.package"
