@@ -42,38 +42,5 @@ module.exports = {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  async bootstrap(/*{ strapi }*/) {
-    // await strapi.plugins["email"].services.email.send({
-    //   to: "harshmavani25@gmail.com",
-    //   from: "harshmavani.dignizant@gmail.com", //e.g. single sender verification in SendGrid
-    //   replyTo: "harshmavani25@gmail.com",
-    //   subject: "The Strapi Email plugin worked successfully",
-    //   text: "Hello world!",
-    //   html: "Hello world!",
-    // });
-    // strapi.db.lifecycles.subscribe({
-    //   models: ["plugin::users-permissions.user"],
-    //   // Send email to new user
-    //   async afterCreate({ params }) {
-    //     const {
-    //       data: { email, username },
-    //     } = params;
-    //     try {
-    //       await strapi.plugins["email"].services.email.send({
-    //         to: `${email}`,
-    //         from: `${process.env.SENDGRID_DEFAULT_FROM}`,
-    //         replyTo: `${process.env.SENDGRID_DEFAULT_TO}`,
-    //         cc: "valid email address",
-    //         bcc: "valid email address",
-    //         replyTo: "valid email address",
-    //         subject: `${username}, Welcome to the ....`,
-    //         html: `<p>${username}</p><p>Welcome to ....</p>
-    //      <p>${process.env.CLIENT_BASE_URL}/confirm-email</p>`,
-    //       });
-    //     } catch (err) {
-    //       console.log(err);
-    //     }
-    //   },
-    // });
-  },
+  async bootstrap(/*{ strapi }*/) {},
 };

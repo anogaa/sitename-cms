@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "videoanalyaisid": {
-      "type": "string"
-    },
     "vieweddatetime": {
       "type": "datetime"
     },
@@ -16,6 +13,40 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "title": {
+      "type": "string"
+    },
+    "views": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "string"
+    },
+    "videourl": {
+      "type": "text"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coverimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
