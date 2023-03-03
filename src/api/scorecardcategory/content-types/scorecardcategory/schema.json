@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scorecardcategories",
+  "info": {
+    "singularName": "scorecardcategory",
+    "pluralName": "scorecardcategories",
+    "displayName": "Scorecard Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryname": {
+      "type": "string"
+    }
+  }
+}

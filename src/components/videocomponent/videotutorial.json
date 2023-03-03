@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_videocomponent_videotutorials",
+  "info": {
+    "displayName": "Video Component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "publishdatetime": {
+      "type": "datetime"
+    },
+    "videourl": {
+      "type": "text"
+    },
+    "coverimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

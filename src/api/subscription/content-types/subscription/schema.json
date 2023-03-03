@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "singularName": "subscription",
+    "pluralName": "subscriptions",
+    "displayName": "Subscription",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startdate": {
+      "type": "datetime"
+    },
+    "enddate": {
+      "type": "datetime"
+    },
+    "autorenew": {
+      "type": "boolean"
+    },
+    "accountId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::account.account"
+    },
+    "packageId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::package.package"
+    }
+  }
+}

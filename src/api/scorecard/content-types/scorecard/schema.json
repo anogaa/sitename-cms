@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scorecards",
+  "info": {
+    "singularName": "scorecard",
+    "pluralName": "scorecards",
+    "displayName": "Scorecard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "serialnumber": {
+      "type": "string"
+    },
+    "shortname": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    },
+    "previousscore": {
+      "type": "string"
+    },
+    "netchange": {
+      "type": "string"
+    },
+    "scorepercentage": {
+      "type": "integer"
+    },
+    "scorecardcategoryid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scorecardcategory.scorecardcategory"
+    },
+    "symbol": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

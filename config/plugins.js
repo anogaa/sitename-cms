@@ -1,0 +1,39 @@
+module.exports = {
+  //
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
+  },
+
+  email: {
+    config: {
+      provider: "nodemailer",
+      providerOptions: {
+        host: "smtp.gmail.com",
+        secure: false,
+        port: 587,
+        auth: {
+          user: "harshmavani25@gmail.com",
+          pass: "gdlzaqjithxjatjc",
+        },
+      },
+      settings: {
+        defaultFrom: "harshmavani25@gmail.com",
+        defaultReplyTo: "harshmavani25@gmail.com",
+        testAddress: "harshmavani21@gmail.com",
+      },
+    },
+  },
+
+  "import-export-entries": {
+    enabled: true,
+  },
+};

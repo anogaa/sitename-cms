@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videoanalyses",
+  "info": {
+    "singularName": "videoanalysis",
+    "pluralName": "videoanalyses",
+    "displayName": "Video Analysis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoanalysis": {
+      "type": "component",
+      "repeatable": true,
+      "component": "videoanalyais.videoanalyais"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_marketingpreferences_marketingpreferences",
+  "info": {
+    "displayName": "Marketing Preferences"
+  },
+  "options": {},
+  "attributes": {
+    "emailopt": {
+      "type": "boolean"
+    },
+    "postopt": {
+      "type": "boolean"
+    },
+    "smsopt": {
+      "type": "boolean"
+    }
+  }
+}

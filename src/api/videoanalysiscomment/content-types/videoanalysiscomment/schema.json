@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videoanalysiscomments",
+  "info": {
+    "singularName": "videoanalysiscomment",
+    "pluralName": "videoanalysiscomments",
+    "displayName": "Video Analysis Comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "videoanalysisid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::videoanalysis.videoanalysis"
+    },
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
