@@ -9,18 +9,10 @@
     "vieweddatetime": {
       "type": "datetime"
     },
-    "userid": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "title": {
       "type": "string"
     },
     "views": {
-      "type": "string"
-    },
-    "likes": {
       "type": "string"
     },
     "videourl": {
@@ -47,6 +39,9 @@
         "videos",
         "audios"
       ]
+    },
+    "like": {
+      "type": "boolean"
     }
   }
 }
