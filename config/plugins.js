@@ -36,4 +36,8 @@ module.exports = {
   "import-export-entries": {
     enabled: true,
   },
+  "url-field": {
+    enabled: true,
+    resolve: "./src/plugins/url-field",
+  },
 };

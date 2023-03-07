@@ -1,13 +1,11 @@
 {
   "collectionName": "components_landing_page_sections_footerlinks",
   "info": {
-    "displayName": "Footerlinks"
+    "displayName": "Footerlinks",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "facebook": {
-      "type": "text"
-    },
     "twitter": {
       "type": "text"
     },
@@ -28,6 +26,10 @@
     },
     "termsofservices": {
       "type": "text"
+    },
+    "facebook": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     }
   }
 }
