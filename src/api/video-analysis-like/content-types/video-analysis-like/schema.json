@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_analysis_likes",
+  "info": {
+    "singularName": "video-analysis-like",
+    "pluralName": "video-analysis-likes",
+    "displayName": "Video Analysis Like"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "videoanalysisid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::videoanalysis.videoanalysis"
+    }
+  }
+}
