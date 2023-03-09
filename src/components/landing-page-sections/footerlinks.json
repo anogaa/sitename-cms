@@ -6,28 +6,35 @@
   },
   "options": {},
   "attributes": {
-    "twitter": {
-      "type": "text"
+    "facebook": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
-    "Instagram": {
-      "type": "text"
+    "twitter": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
+    },
+    "instagram": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "helpcenter": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "blog": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "newsletter": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "privacypolicy": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "termsofservices": {
-      "type": "text"
-    },
-    "facebook": {
       "type": "customField",
       "customField": "plugin::url-field.url-field"
     }

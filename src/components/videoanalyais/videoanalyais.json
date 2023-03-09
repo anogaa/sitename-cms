@@ -40,8 +40,10 @@
         "audios"
       ]
     },
-    "like": {
-      "type": "boolean"
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video-analysis-like.video-analysis-like"
     }
   }
 }

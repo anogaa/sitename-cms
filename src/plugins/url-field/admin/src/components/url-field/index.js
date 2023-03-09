@@ -17,18 +17,20 @@ export default function Index({
   const [err, setErr] = useState("");
 
   useEffect(() => {
-    console.log("error", error);
-    console.log("description", description);
-
     var res = prompt.match(
       /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g
     );
     if (res == null) {
-      return console.log("please enter valid url");
+      return (
+        console.log("please enter valid url"), setErr("please enter valid url")
+      );
     } else {
-      return onChange({
-        target: { name, value: prompt, type: attribute.type },
-      });
+      return (
+        onChange({
+          target: { name, value: prompt, type: attribute.type },
+        }),
+        setErr("")
+      );
     }
   }, [prompt]);
   return (
@@ -39,6 +41,7 @@ export default function Index({
         name={intlLabel.id}
         onChange={(e) => setPrompt(e.target.value)}
         value={prompt}
+        error={err}
       />
     </Stack>
   );

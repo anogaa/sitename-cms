@@ -4,10 +4,11 @@
   "info": {
     "singularName": "watchlist",
     "pluralName": "watchlists",
-    "displayName": "Watchlist"
+    "displayName": "Watchlist",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
