@@ -1,0 +1,139 @@
+openapi: 3.0.2
+info:
+  title: SiteName API
+  version: 0.1.0
+paths:
+  /rate/get_realtime/{ticker}:
+    get:
+      summary: Getrate
+      operationId: getRate_rate_get_realtime__ticker__get
+      parameters:
+        - required: true
+          schema:
+            title: Ticker
+          name: ticker
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ticker'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /rates/get_realtime/all:
+    get:
+      summary: Getrates
+      operationId: getRates_rates_get_realtime_all_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tickers'
+components:
+  schemas:
+    HTTPValidationError:
+      title: HTTPValidationError
+      type: object
+      properties:
+        detail:
+          title: Detail
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationError'
+    Ticker:
+      title: Ticker
+      required:
+        - SYMBOL_NAME
+        - NAME
+        - lastPrice
+        - IV
+        - WLB1
+        - WLB2
+        - WUB1
+        - WUB2
+        - WLB1_STATE
+        - WLB2_STATE
+        - WUB1_STATE
+        - WUB2_STATE
+        - TYPE
+      type: object
+      properties:
+        SYMBOL_NAME:
+          title: Symbol Name
+          type: string
+        NAME:
+          title: Name
+          type: string
+        lastPrice:
+          title: Lastprice
+          type: number
+        IV:
+          title: Iv
+          type: number
+        WLB1:
+          title: Wlb1
+          type: number
+        WLB2:
+          title: Wlb2
+          type: number
+        WUB1:
+          title: Wub1
+          type: number
+        WUB2:
+          title: Wub2
+          type: number
+        WLB1_STATE:
+          title: Wlb1 State
+          type: string
+        WLB2_STATE:
+          title: Wlb2 State
+          type: string
+        WUB1_STATE:
+          title: Wub1 State
+          type: string
+        WUB2_STATE:
+          title: Wub2 State
+          type: string
+        TYPE:
+          title: Type
+          type: string
+    Tickers:
+      title: Tickers
+      required:
+        - results
+      type: object
+      properties:
+        results:
+          title: Results
+          type: array
+          items:
+            $ref: '#/components/schemas/Ticker'
+    ValidationError:
+      title: ValidationError
+      required:
+        - loc
+        - msg
+        - type
+      type: object
+      properties:
+        loc:
+          title: Location
+          type: array
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string

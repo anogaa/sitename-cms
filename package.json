@@ -10,13 +10,15 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-graphql": "4.6.0",
-    "@strapi/plugin-i18n": "4.6.0",
-    "@strapi/plugin-users-permissions": "4.6.0",
+    "@strapi/plugin-i18n": "4.7.0",
+    "@strapi/plugin-users-permissions": "4.7.0",
     "@strapi/provider-email-nodemailer": "^4.7.0",
-    "@strapi/strapi": "4.6.0",
+    "@strapi/strapi": "4.7.0",
     "better-sqlite3": "7.4.6",
     "mysql": "^2.18.1",
+    "request": "^2.88.2",
     "strapi-plugin-import-export-entries": "^1.18.0",
     "strapi-stripe": "^3.2.1"
   },

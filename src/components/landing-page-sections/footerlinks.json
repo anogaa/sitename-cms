@@ -1,33 +1,42 @@
 {
   "collectionName": "components_landing_page_sections_footerlinks",
   "info": {
-    "displayName": "Footerlinks"
+    "displayName": "Footerlinks",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "facebook": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "twitter": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
-    "Instagram": {
-      "type": "text"
+    "instagram": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "helpcenter": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "blog": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "newsletter": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "privacypolicy": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     },
     "termsofservices": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
     }
   }
 }

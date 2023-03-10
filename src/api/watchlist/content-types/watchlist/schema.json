@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watchlists",
+  "info": {
+    "singularName": "watchlist",
+    "pluralName": "watchlists",
+    "displayName": "Watchlist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "scorecardid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scorecard.scorecard"
+    }
+  }
+}
