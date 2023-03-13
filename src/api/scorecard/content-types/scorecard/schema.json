@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serialnumber": {
-      "type": "string"
-    },
     "shortname": {
       "type": "string"
     },
@@ -57,6 +54,15 @@
     },
     "monthly": {
       "type": "integer"
+    },
+    "serialnumber": {
+      "type": "string"
+    },
+    "watchlists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::watchlist.watchlist",
+      "mappedBy": "scorecardid"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "watchlists",
+  "collectionName": "recently_watch_tutorials",
   "info": {
-    "singularName": "watchlist",
-    "pluralName": "watchlists",
-    "displayName": "Watchlist",
+    "singularName": "recently-watch-tutorial",
+    "pluralName": "recently-watch-tutorials",
+    "displayName": "Recently Watch Tutorial",
     "description": ""
   },
   "options": {
@@ -17,11 +17,10 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "scorecardid": {
+    "tutorialid": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::scorecard.scorecard",
-      "inversedBy": "watchlists"
+      "relation": "oneToOne",
+      "target": "api::tutorial.tutorial"
     }
   }
 }

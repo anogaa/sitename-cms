@@ -14,10 +14,6 @@
       "type": "customField",
       "customField": "plugin::url-field.url-field"
     },
-    "instagram": {
-      "type": "customField",
-      "customField": "plugin::url-field.url-field"
-    },
     "helpcenter": {
       "type": "customField",
       "customField": "plugin::url-field.url-field"
@@ -35,6 +31,10 @@
       "customField": "plugin::url-field.url-field"
     },
     "termsofservices": {
+      "type": "customField",
+      "customField": "plugin::url-field.url-field"
+    },
+    "Instagram": {
       "type": "customField",
       "customField": "plugin::url-field.url-field"
     }
