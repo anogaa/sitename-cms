@@ -62,7 +62,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::watchlist.watchlist",
-      "mappedBy": "scorecardid"
+      "inversedBy": "scorecardid"
     }
   }
 }

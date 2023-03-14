@@ -17,6 +17,12 @@
     },
     "type": {
       "type": "string"
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scorecard-subcategory.scorecard-subcategory",
+      "mappedBy": "scorecard_category"
     }
   }
 }

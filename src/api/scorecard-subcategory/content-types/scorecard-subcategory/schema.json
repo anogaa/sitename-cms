@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scorecard_subcategories",
+  "info": {
+    "singularName": "scorecard-subcategory",
+    "pluralName": "scorecard-subcategories",
+    "displayName": "scorecard Subcategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Subcategoryname": {
+      "type": "string"
+    },
+    "scorecard_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::scorecardcategory.scorecardcategory",
+      "inversedBy": "subcategories"
+    }
+  }
+}
