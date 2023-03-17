@@ -39,11 +39,6 @@
         "videos",
         "audios"
       ]
-    },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::video-analysis-like.video-analysis-like"
     }
   }
 }

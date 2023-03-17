@@ -16,6 +16,12 @@
       "type": "component",
       "repeatable": true,
       "component": "videoanalyais.videoanalyais"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::video-analysis-like.video-analysis-like",
+      "mappedBy": "videoanalysisid"
     }
   }
 }

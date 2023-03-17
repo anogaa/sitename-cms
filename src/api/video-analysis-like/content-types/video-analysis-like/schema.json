@@ -19,8 +19,9 @@
     },
     "videoanalysisid": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::videoanalysis.videoanalysis"
+      "relation": "manyToMany",
+      "target": "api::videoanalysis.videoanalysis",
+      "inversedBy": "likes"
     }
   }
 }

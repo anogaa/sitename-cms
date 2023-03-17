@@ -27,7 +27,7 @@
     "netchange": {
       "type": "string"
     },
-    "scorepercentage": {
+    "scorevalue": {
       "type": "integer"
     },
     "scorecardcategoryid": {
@@ -58,11 +58,14 @@
     "serialnumber": {
       "type": "string"
     },
+    "previousscorevalue": {
+      "type": "integer"
+    },
     "watchlists": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::watchlist.watchlist",
-      "inversedBy": "scorecardid"
+      "mappedBy": "scorecardid"
     }
   }
 }
