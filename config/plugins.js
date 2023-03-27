@@ -22,7 +22,7 @@ module.exports = {
         port: 587,
         auth: {
           user: "harshmavani25@gmail.com",
-          pass: "gdlzaqjithxjatjc",
+          pass: "sthqrblcrzdvfxjt",
         },
       },
       settings: {

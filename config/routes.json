@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/watchlist/watchlistAll",
+      "handler": "watchlist.watchlistAll"
+    }
+  ]
+}
