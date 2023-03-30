@@ -78,6 +78,16 @@
       "relation": "manyToOne",
       "target": "api::account.account",
       "inversedBy": "users"
+    },
+    "profilepic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

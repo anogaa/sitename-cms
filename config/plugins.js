@@ -5,7 +5,7 @@ module.exports = {
       endpoint: "/graphql",
       shadowCRUD: true,
       playgroundAlways: false,
-      depthLimit: 10,
+      depthLimit: 12,
       amountLimit: 100,
       apolloServer: {
         tracing: false,
@@ -22,7 +22,7 @@ module.exports = {
         port: 587,
         auth: {
           user: "harshmavani25@gmail.com",
-          pass: "gdlzaqjithxjatjc",
+          pass: "sthqrblcrzdvfxjt",
         },
       },
       settings: {

@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/watchlist/watchlistAll",
+      "handler": "watchlist.watchlistAll"
+    }
+  ]
+}

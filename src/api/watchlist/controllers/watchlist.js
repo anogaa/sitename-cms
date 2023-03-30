@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * watchlist controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::watchlist.watchlist');
+module.exports = createCoreController("api::watchlist.watchlist");

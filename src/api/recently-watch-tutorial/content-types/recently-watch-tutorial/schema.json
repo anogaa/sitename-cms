@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "video_analysis_likes",
+  "collectionName": "recently_watch_tutorials",
   "info": {
-    "singularName": "video-analysis-like",
-    "pluralName": "video-analysis-likes",
-    "displayName": "Video Analysis Like",
+    "singularName": "recently-watch-tutorial",
+    "pluralName": "recently-watch-tutorials",
+    "displayName": "Recently Watch Tutorial",
     "description": ""
   },
   "options": {
@@ -17,11 +17,10 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "videoanalysisid": {
+    "tutorialid": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::videoanalysis.videoanalysis",
-      "inversedBy": "likes"
+      "relation": "oneToOne",
+      "target": "api::tutorial.tutorial"
     }
   }
 }
