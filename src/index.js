@@ -33,6 +33,49 @@ module.exports = {
         }),
       ],
     }));
+
+    extensionService.use(({ strapi }) => ({
+      typeDefs: `
+      type Mutation {
+        createallwatchlist(userid: String!, scorecardid: String!): WatchlistEntityResponse
+      }
+
+      type WatchlistEntityResponse {
+        success: String!
+      }
+    `,
+      resolvers: {
+        Mutation: {
+          createallwatchlist: {
+            resolve: async (parent, args, context) => {
+              const { toEntityResponse } = strapi.service(
+                "plugin::graphql.format"
+              ).returnTypes;
+              try {
+                var scorecardidArry = [];
+                scorecardidArry = JSON.parse(args.scorecardid);
+                for (let i = 0; i < scorecardidArry.length; i++) {
+                  const data = {
+                    userid: args.userid,
+                    scorecardid: scorecardidArry[i],
+                  };
+
+                  await strapi.db
+                    .query("api::watchlist.watchlist")
+                    .create({ data: data });
+                }
+
+                // const response = toEntityResponse({ success: true });
+                return { success: "true" };
+              } catch (err) {
+                // const response = toEntityResponse(err);
+                return { success: "false" };
+              }
+            },
+          },
+        },
+      },
+    }));
   },
 
   /**
